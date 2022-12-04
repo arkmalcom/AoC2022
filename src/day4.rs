@@ -1,12 +1,11 @@
-pub fn solve() {
-    let contents = include_str!("../inputs/day4.txt");
-    let part_one: u16 = contents
+pub fn solve(input: &str) {
+    let part_one: u16 = input
                             .lines()
                             .map(|l| l.replace("-", ","))
                             .map(|l| to_i16_vector(l))
                             .map(|v| ranges_contain(v))
                             .sum();
-    let part_two: u16 = contents
+    let part_two: u16 = input
                             .lines()
                             .map(|l| l.replace("-", ","))
                             .map(|l| to_i16_vector(l))

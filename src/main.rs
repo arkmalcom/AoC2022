@@ -1,4 +1,6 @@
 mod day4;
 fn main() {
-    day4::solve();
+    let input = include_str!("../inputs/day4.txt");
+
+    day4::solve(input);
 }
