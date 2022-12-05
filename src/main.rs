@@ -1,6 +1,6 @@
-mod day4;
+mod day5;
 fn main() {
-    let input = include_str!("../inputs/day4.txt");
+    let input = include_str!("../inputs/day5.txt");
 
-    day4::solve(input);
+    day5::solve(input);
 }
